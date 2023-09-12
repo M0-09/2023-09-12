@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>September 9th, 2K23</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Why lint your JavaScript?</h1>
+    <h2> Just because you should!!</h2>
+    <P class="ex1"> Well run projects have clear, consistent coding conventions with automated enforcement. When I review a project and its code looks like a house built by a child using nothing but a hatchet and a picture of a house, it doesn't inspire confidence that the code is functional.
+
+    </P>
+    <P>Not having coding conventions is also a barrier to attracting contributions. Depending on a project that does not welcome (quality!) contributions is itself a risk.
+
+
+    </P>
+    <P>Besides checking style, linters are also excellent tools for finding certain classes of bugs, such as those related to variable scope. Assignment to undeclared variables (these leak into the global scope, contaminating it and possibly causing very difficult to find bugs) and use of undefined variables are examples of errors that are detectable at lint time.
+
+    </P>
+    <h2>How to configure ESLint:</h2>
+
+    <ol>
+        <li>Install and save package dependencies: npm install --save-dev eslint eslint-config-strongloop.
+
+        </li> 
+        <br> <br>
+        <li>Set up ESLint to use the StrongLoop configuration by running echo '{"extends": "strongloop"}' > .eslintrc.json.
+
+        </li>
+        <br><br>
+        <li>Ensure you have a .gitignore file (so derived files do not get linted, only original source files). If you don’t have one, you can create one with minimal effort: echo node_modules/ >> .gitignore.
+
+        </li>
+    </ol>
+
+    <div class="note">I am getting hungry again while working on this! </div>
+</body>
+</html>
